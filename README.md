@@ -32,3 +32,20 @@ $db->bind(':value2', 'another value');
 $db->bind(':value3', 'third value');
 $db->execute();
 ```
+
+
+To retrieve data from the database:
+```php
+$db->query('SELECT * FROM table_name WHERE id = :id');
+$db->bind(':id', $id);
+$rows = $db->resultset();
+```
+
+Please refer to the class documentation for more information on the available methods and their usage.
+
+## Note
+
+This is a basic implementation, to be used as a starting point for your implementation, and it should be customized to meet the specific needs of your project.
+
+
+
