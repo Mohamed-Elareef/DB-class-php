@@ -22,7 +22,7 @@ To use the class, simply include it in your PHP script and create a new instance
 
 ```php
 $db = new DB();
-
+'''
 
 You can then use the class methods to interact with the database. For example, to insert data into a table:
 
