@@ -1,3 +1,4 @@
+<?php
 class DB {
     private $host = 'localhost';
     private $user = 'root';
@@ -69,4 +70,4 @@ class DB {
     public function lastInsertId(){
         return $this->dbh->lastInsertId();
     }
- 
+ ?>
