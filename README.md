@@ -25,10 +25,10 @@ $db = new DB();
 ```
 
 You can then use the class methods to interact with the database. For example, to insert data into a table:
-
+```php
 $db->query('INSERT INTO table_name (column1, column2, column3) VALUES (:value1, :value2, :value3)');
 $db->bind(':value1', 'some value');
 $db->bind(':value2', 'another value');
 $db->bind(':value3', 'third value');
 $db->execute();
-
+```
